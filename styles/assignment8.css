@@ -1,0 +1,55 @@
+html {
+    font-size: 100%; /* keep */
+    box-sizing: border-box; /* keep */
+}
+* {
+    box-sizing: inherit; /* keep */
+}
+body {
+    font-family: "Krub", Helvetica, Arial, sans-serif;
+    background: #fff; /* keep */
+    color: #333; /* keep */
+    margin-right: 0;
+    padding: 3em;
+}
+h1, h2 {
+    font-family: "Crete Round", Cambria, serif;
+}
+#tagline {
+    font-style: italic;
+
+/*  the #container div (below) holds one chart  */
+
+
+#container97 {
+  width: 60%;
+  height: 500px;
+}
+
+p { line-height: 1.5rem; }
+
+.subtitle {
+  font-size: 1.7rem;
+  font-style: italic;
+}
+
+/* link styles /18 */
+a {
+  color: #0287b3;
+}
+
+a:hover {
+  color: #3ecbfa;
+}
+
+/* put media queries below - I used two; the ORDER matters! */
+@media screen and (max-width: 1000px) {
+    #container {
+      width: 100%;
+    }
+}
+@media screen and (max-width: 750px) {
+    body {
+      margin: 1rem;
+    }
+}

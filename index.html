@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marital Status By Age in the U.S.</title>
+
+  <link rel="stylesheet" href="styles/assignment8.css">
+
+  <byline>By Josephine Lopez, Student, University of Florida</byline>
+
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+
+</head>
+
+<body>
+
+  <h1> Tech Investment in the U.S.</h1>
+
+  <p>
+    The following two charts concern global internet usage and investments in tech in the United States. The first chart compares the growth of internet usage over a period of 22 years of both the United States and China. As shown in the chart titled "U.S. vs Chinese Internet Users from 1993-2014,"
+</p>
+
+
+<div id="container97" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+<div id="container99" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
+<!-- data stuff down below -->
+<div id="container">
+
+<script>
+
+
+Highcharts.chart('container97', {
+    chart: {
+        type: 'area'
+    },
+
+
+    title: {
+        text: 'U.S. vs Chinese Internet Users from 1993-2014'
+    },
+
+
+    subtitle: {
+        text: 'Source: <a href="http://data.un.org/Data.aspx?q=divorce&d=GenderStat&f=inID%3a23">' +
+            'data.un.org</a>'
+    },
+
+
+    xAxis: {
+        allowDecimals: false,
+        title: {
+            text: ' '
+        },
+
+        categories: [1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014]
+
+    },
+
+
+    yAxis: {
+        title: {
+            text: 'National % of Internet Users'
+        },
+        labels: {
+            formatter: function () {
+                return this.value ;
+            }
+        }
+    },
+
+
+    tooltip: {
+        pointFormat: '<b>{point.y:,.0f}</b><br/>% of {series.name} used the internet.'
+    },
+
+
+
+    plotOptions: {
+        area: {
+            pointStart: 1,
+            marker: {
+                enabled: false,
+                symbol: 'circle',
+                radius: 2,
+                states: {
+                    hover: {
+                        enabled: true
+                    }
+                }
+            }
+        }
+    },
+
+
+    series: [{
+        name: 'United States',
+        data: [
+
+  2.27167329376237,
+  4.862780634624,
+  9.23708829729378,
+  16.4193529600768,
+  21.6164009686742,
+  30.093196588091,
+  35.8487244559914,
+  43.0791626375201,
+  49.0808315896951,
+  58.7854038836952,
+  61.6971171244207,
+  64.7582564759896,
+  67.968052915002,
+  68.9311932699721,
+  75,
+  74,
+  71,
+  71.69,
+  69.7294607619268,
+  79.3,
+  84.2,
+  87.36
+        ]
+    },
+
+    {
+        name: 'China',
+        data: [
+
+0.000168680270954864,
+0.0011681145300252,
+0.00495470950415135,
+0.0130816917950895,
+0.0323948609340087,
+0.168540297316545,
+0.708187956801324,
+1.77591320677415,
+2.63965021485872,
+4.59570433077551,
+6.2,
+7.3,
+8.52325700269541,
+10.5231526193851,
+16,
+22.6,
+28.9,
+34.3,
+38.3,
+42.3001174855995,
+45.8,
+49.3
+        ]
+  }]
+
+<!-- the little curlyparenthsemicolon closes the chart below...dont fuck it up -->
+
+});
+
+
+
+
+
+Highcharts.chart('container99', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'U. S. Software Investment and Prices by Type'
+    },
+
+    subtitle: {
+        text: 'Source: <a href="https://apps.bea.gov/iTable/iTable.cfm?ReqID=19&step=3#reqid=19&step=3&isuri=1&1921=underlying&1903=2078">' +
+            'data.un.org</a>'
+    },
+
+    subtitle: {
+        text: 'Source: <a href="https://apps.bea.gov/iTable/iTable.cfm?ReqID=19&step=3#reqid=19&step=3&isuri=1&1921=underlying&1903=2078">' +
+            'data.un.org</a>'
+    },
+
+
+    xAxis: {
+        categories: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017]
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Total investment (billions of dollars)'
+        },
+        stackLabels: {
+            enabled: true,
+            style: {
+                fontWeight: 'bold',
+                color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+            }
+        }
+    },
+    legend: {
+        align: 'right',
+        x: -30,
+        verticalAlign: 'top',
+        y: 25,
+        floating: true,
+        backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+        borderColor: '#CCC',
+        borderWidth: 1,
+        shadow: false
+    },
+    tooltip: {
+        headerFormat: '<b>{point.x}</b><br/>',
+        pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+    },
+    plotOptions: {
+        column: {
+            stacking: 'normal',
+            dataLabels: {
+                enabled: true,
+                color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+            }
+        }
+    },
+    series: [{
+        name: 'Business (private)',
+        data: [264.9, 291.1, 315.3, 328.0, 343.5, 353.7, 376.5, 405.4]
+    }, {
+        name: 'Federal government',
+        data: [226.4, 249.8, 272.1, 283.7, 297.5, 307.3, 327.5, 352.9]
+    }, {
+        name: 'State and local government',
+        data: [12.8, 13.4, 13.9, 14.6, 15.3, 15.8, 16.5, 17.7]
+    }]
+});
+
+
+
+
+</script>
+
+</div>
+
+</body>
+</html>
