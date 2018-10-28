@@ -18,15 +18,14 @@ byline {
 }
 
 
-
-
-@media screen and (max-width: 1000px) {
-    #container {
-      width: 100%;
-    }
-}
 @media screen and (max-width: 750px) {
     body {
       margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
     }
 }
