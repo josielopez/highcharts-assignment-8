@@ -28,5 +28,8 @@ byline {
     .tooltip {
     display: none;
     }
+    html {
+        font-size: 80%;
+    }
 
 }
