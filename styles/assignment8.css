@@ -1,14 +1,15 @@
 html {
-    font-size: 100%; /* keep */
-    box-sizing: border-box; /* keep */
+    font-size: 100%;
+    box-sizing: border-box;
 }
+
 * {
-    box-sizing: inherit; /* keep */
+    box-sizing: inherit;
 }
 body {
     font-family: "Krub", Helvetica, Arial, sans-serif;
-    background: #fff; /* keep */
-    color: #333; /* keep */
+    background: #fff;
+    color: #333;
     margin-right: 0;
     padding: 3em;
 }
@@ -18,13 +19,6 @@ h1, h2 {
 #tagline {
     font-style: italic;
 
-/*  the #container div (below) holds one chart  */
-
-
-#container97 {
-  width: 60%;
-  height: 500px;
-}
 
 p { line-height: 1.5rem; }
 
@@ -33,7 +27,7 @@ p { line-height: 1.5rem; }
   font-style: italic;
 }
 
-/* link styles /18 */
+
 a {
   color: #0287b3;
 }
@@ -42,7 +36,7 @@ a:hover {
   color: #3ecbfa;
 }
 
-/* put media queries below - I used two; the ORDER matters! */
+
 @media screen and (max-width: 1000px) {
     #container {
       width: 100%;
