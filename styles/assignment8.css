@@ -2,7 +2,6 @@ html {
     font-size: 100%;
 }
 
-
 body {
     font-family: "Krub", Helvetica, Arial, sans-serif;
     background: #fff;
@@ -14,6 +13,9 @@ h1 {
     font-family: "Crete Round", Cambria, serif;
 }
 
+byline {
+    font-size: .8em;
+}
 
 
 
